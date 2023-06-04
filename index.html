@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>del1</title>
+  <style>
+   
+    body {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1db0e37b-530d-401d-a7c3-cc8ae523c85f/dfw3hbb-1aba6af2-b92c-4698-a991-fee98ade6225.png/v1/fill/w_1280,h_720,q_80,strp/spac13372_by_yloxoreil_dfw3glt__1__by_yloxoreil_dfw3hbb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMWRiMGUzN2ItNTMwZC00MDFkLWE3YzMtY2M4YWU1MjNjODVmXC9kZnczaGJiLTFhYmE2YWYyLWI5MmMtNDY5OC1hOTkxLWZlZTk4YWRlNjIyNS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.c3zmYLfH1bfbtmZxtF7E9d2FuLGxJJUc6xUMgxsZzj4");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+
+
+    /* CSS för desktop (PC) version */
+    @media screen and (min-width: 1000px) {
+      .column-container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    /* CSS för mobil version */
+    @media screen and (max-width: 999px) {
+      .column-container {
+        display: block;
+      }
+    }
+    .column-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; 
+    }
+
+.column {
+  position: relative;
+  background-color: hsla(253, 90%, 8%, 0.645);
+  border: 1px solid hwb(193 1% 48% / 0.582);
+  box-shadow: 0px 2px 6px rgba(59, 21, 1, 0.533);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  flex-basis: calc(33.33% - 20px); 
+}
+
+.column:hover {
+  transform: scale(1.05);
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s;
+  object-fit: cover;
+}
+
+.column:hover img {
+  opacity: 0.8;
+}
+
+.column h2 {
+  color: rgb(139, 29, 99);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.column p {
+  color: rgb(108, 62, 236);
+  font-size: 16px;
+}
+
+.background-color {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  <div class="background-color"></div>
+  <div id="columnContainer" class="column-container">
+    <div class="column">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1db0e37b-530d-401d-a7c3-cc8ae523c85f/deuhiir-004239fe-15d9-4133-93c9-6e8f8df3b9ec.jpg/v1/fill/w_1280,h_1120,q_75,strp/weirdpyramidbutok_by_yloxoreil_deuhiir-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEyMCIsInBhdGgiOiJcL2ZcLzFkYjBlMzdiLTUzMGQtNDAxZC1hN2MzLWNjOGFlNTIzYzg1ZlwvZGV1aGlpci0wMDQyMzlmZS0xNWQ5LTQxMzMtOTNjOS02ZThmOGRmM2I5ZWMuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.c1EnzA9c3dTiVYPDyJSQFxq3DEb7TwjRsVDol4Jw-4I" alt="Image 1">
+      <h2>Cubes</h2>
+      <p></p>
+    </div>
+    <div class="column">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1db0e37b-530d-401d-a7c3-cc8ae523c85f/deuhigk-fa34da54-e7a6-4227-9501-eee5a67e7d72.png/v1/fill/w_1280,h_720/wowao__by_yloxoreil_deuhigk-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMWRiMGUzN2ItNTMwZC00MDFkLWE3YzMtY2M4YWU1MjNjODVmXC9kZXVoaWdrLWZhMzRkYTU0LWU3YTYtNDIyNy05NTAxLWVlZTVhNjdlN2Q3Mi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.QHP-V1-QOiBTt2gxkKSYScVU25qDng_mDIb-kyJulzk" alt="Image 2">
+      <h2>Lila sand</h2>
+      <p>Bilderna är skapade i photoshop genom att lägga ut färgklickar och sen röra runt med smudgeverktyget. Det får en annan nyans och blir aktiva med aktivitet</p>
+    </div>
+    <div class="column">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1db0e37b-530d-401d-a7c3-cc8ae523c85f/deuhkq5-93dc53c5-c0c3-4df0-8784-a4865a421861.png/v1/fill/w_1280,h_1120,q_80,strp/cleanyourshit__4__by_yloxoreil_deuhkq5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEyMCIsInBhdGgiOiJcL2ZcLzFkYjBlMzdiLTUzMGQtNDAxZC1hN2MzLWNjOGFlNTIzYzg1ZlwvZGV1aGtxNS05M2RjNTNjNS1jMGMzLTRkZjAtODc4NC1hNDg2NWE0MjE4NjEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Uswcqk39mNlz-_4HP6ZAWFsictBUO97EUTd57_NvQ6o" alt="Image 3">
+      <h2>Sagoland</h2>
+      <p></p>
+    </div>
+  </div>
+</body>
+</html>
